@@ -98,5 +98,5 @@ def collect_data(total_points=float('inf'), batch_size=1000, delay=10):
 collect_data(
     total_points=float('inf'),  # Collect indefinitely
     batch_size=1000,           # Save every 1000 points
-    delay=60                   # 10 second delay between requests
+    delay=1                   # 10 second delay between requests
 )
