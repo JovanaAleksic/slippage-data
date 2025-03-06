@@ -47,10 +47,10 @@ def save_batch(data, batch_number):
     
     # For first batch, write with headers
     if batch_number == 0:
-        df.to_csv("slippage_data_part4.csv", index=False)
+        df.to_csv("slippage_data_part5.csv", index=False)
     # For subsequent batches, append without headers
     else:
-        df.to_csv("slippage_data_part4.csv", mode='a', header=False, index=False)
+        df.to_csv("slippage_data_part5.csv", mode='a', header=False, index=False)
     
     print(f"Saved batch {batch_number} at {datetime.now()}")
     print(f"Batch stats:\n{df.describe()}\n")
