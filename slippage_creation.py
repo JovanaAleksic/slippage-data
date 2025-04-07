@@ -79,9 +79,9 @@ def save_batch(data, batch_number):
     df = pd.DataFrame(data)
 
     if batch_number == 0:
-        df.to_csv("slippage_data_part1.csv", index=False)
+        df.to_csv("slippage_data_part2.csv", index=False)
     else:
-        df.to_csv("slippage_data_part1.csv", mode='a', header=False, index=False)
+        df.to_csv("slippage_data_part2.csv", mode='a', header=False, index=False)
 
     print(f"Saved batch {batch_number} at {datetime.now()}")
 
